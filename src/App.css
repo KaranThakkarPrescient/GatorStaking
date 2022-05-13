@@ -3,3 +3,141 @@ body {
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
 }
+
+.main {
+  background: url("./assets/bg_brow.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.nav-img {
+  background-image: url("./assets/wood-bottom.png");
+  width: 100vw;
+  height: 80px;
+}
+
+.stake-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stake-bg {
+  margin: 100px 20px 20px;
+  width: 1000px;
+  /* height: 500px; */
+  background-color: rgb(22 25 28 / 41%);
+  border-radius: 20px;
+  border: solid white 10px;
+}
+
+.stake-btns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 30px 10px;
+}
+
+.stake {
+  margin-right: 40px;
+  margin-bottom: inherit;
+}
+
+.stake-main-btn,
+.unstake-main-btn {
+  cursor: pointer;
+  min-width: 100px;
+  padding: 0 10px;
+  height: 33px;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #513d36;
+  color: white;
+}
+
+.select-all-main {
+  cursor: pointer;
+  min-width: 100px;
+  padding: 0 10px;
+  height: 33px;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #513d36;
+  color: white;
+  margin: 30px;
+}
+
+.select-all {
+  display: flex;
+  align-items: center;
+  margin: 30px 30px 25px;
+}
+
+.select-all-label {
+  margin-left: 13px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.stake-main-btn.active,
+.unstake-main-btn.active {
+  background-color: #98796e;
+}
+
+.stake-main-btn:hover,
+.unstake-main-btn:hover,
+.select-all-main:hover {
+  background-color: #c8c4c4;
+}
+
+.stake-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 10px 20px;
+}
+
+input[type="checkbox"] {
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+
+.card {
+  width: 200px;
+  height: 266px;
+  cursor: pointer;
+}
+
+.card-img {
+  width: inherit;
+  height: inherit;
+}
+
+.card-img-main {
+  width: inherit;
+  height: inherit;
+}
+
+@media (max-width: 1041px) {
+  .stake-card-label {
+    flex: 1;
+  }
+}
