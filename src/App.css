@@ -5,7 +5,10 @@ body {
 }
 
 .main {
-  background: url("./assets/bg_brow.png") no-repeat center center fixed;
+  background: url("./assets/bg_brow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
