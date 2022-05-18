@@ -306,22 +306,22 @@ export const imagesDetails = [
     price: "????",
     likes: 77,
   },
-  {
-    key: 35,
-    name: "Pastel Peeps",
-    isChecked: false,
-    imageSrc:
-      "https://pastelpeepsblob.blob.core.windows.net/assets/scroll(7).png",
-    price: "????",
-    likes: 88,
-  },
-  {
-    key: 36,
-    name: "Pastel Peeps",
-    isChecked: false,
-    imageSrc:
-      "https://pastelpeepsblob.blob.core.windows.net/assets/scroll(8).png",
-    price: "????",
-    likes: 89,
-  },
+  // {
+  //   key: 35,
+  //   name: "Pastel Peeps",
+  //   isChecked: false,
+  //   imageSrc:
+  //     "https://pastelpeepsblob.blob.core.windows.net/assets/scroll(7).png",
+  //   price: "????",
+  //   likes: 88,
+  // },
+  // // {
+  //   key: 36,
+  //   name: "Pastel Peeps",
+  //   isChecked: false,
+  //   imageSrc:
+  //     "https://pastelpeepsblob.blob.core.windows.net/assets/scroll(8).png",
+  //   price: "????",
+  //   likes: 89,
+  // },
 ];

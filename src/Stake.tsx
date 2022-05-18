@@ -24,19 +24,21 @@ const Stake = () => {
   };
 
   return (
-    <>
+    <div className="main-select">
       <div className="select-all">
-        <input
-          type="checkbox"
-          name="allSelect"
-          id="allSelect"
-          checked={isNfts.filter((item) => item?.isChecked !== true).length < 1}
-          onChange={handleChange}
-        />
         <label htmlFor="allSelect" className="select-all-label">
+          <input
+            type="checkbox"
+            name="allSelect"
+            id="allSelect"
+            checked={
+              isNfts.filter((item) => item?.isChecked !== true).length < 1
+            }
+            onChange={handleChange}
+          />
           Select All
         </label>
-        {/* <button className="select-all-main">Select All</button> */}
+        <button className="confirm-btn">Confirm</button>
       </div>
       <div className="stake-cards">
         {isNfts.map((item, idx) => (
@@ -60,7 +62,7 @@ const Stake = () => {
           </>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

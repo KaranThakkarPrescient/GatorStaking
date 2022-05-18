@@ -32,9 +32,6 @@ body {
   margin: 100px 20px 20px;
   width: 1000px;
   /* height: 500px; */
-  background-color: rgb(22 25 28 / 41%);
-  border-radius: 20px;
-  border: solid white 10px;
 }
 
 .stake-btns {
@@ -64,7 +61,13 @@ body {
   color: white;
 }
 
-.select-all-main {
+.main-select {
+  background-color: rgb(22 25 28 / 41%);
+  border-radius: 20px;
+  border: solid white 10px;
+}
+
+/* .select-all-main {
   cursor: pointer;
   min-width: 100px;
   padding: 0 10px;
@@ -78,7 +81,7 @@ body {
   background-color: #513d36;
   color: white;
   margin: 30px;
-}
+} */
 
 .select-all {
   display: flex;
@@ -87,9 +90,12 @@ body {
 }
 
 .select-all-label {
-  margin-left: 13px;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
   font-size: 20px;
   color: #fff;
+  cursor: pointer;
 }
 
 .stake-main-btn.active,
@@ -98,8 +104,7 @@ body {
 }
 
 .stake-main-btn:hover,
-.unstake-main-btn:hover,
-.select-all-main:hover {
+.unstake-main-btn:hover {
   background-color: #c8c4c4;
 }
 
@@ -113,7 +118,7 @@ body {
 
 input[type="checkbox"] {
   background-color: #fff;
-  margin: 0;
+  margin-right: 10px;
   font: inherit;
   color: currentColor;
   width: 1.15em;
@@ -121,6 +126,17 @@ input[type="checkbox"] {
   border: 0.15em solid currentColor;
   border-radius: 0.15em;
   transform: translateY(-0.075em);
+}
+
+.confirm-btn {
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  background: #40f8ba;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .card {
@@ -142,5 +158,16 @@ input[type="checkbox"] {
 @media (max-width: 1041px) {
   .stake-card-label {
     flex: 1;
+  }
+}
+
+@media (max-width: 385px) {
+  .select-all {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .select-all-label {
+    margin-bottom: 20px;
   }
 }
